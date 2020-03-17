@@ -29,10 +29,10 @@ function init() {
   console.log(verte.data);
   var material = new THREE.ShaderMaterial( {
       uniforms: uniforms,
-    //  vertexShader: document.getElementById( 'vertexShader' ).textContent,
-    //  fragmentShader: document.getElementById( 'fragmentShader' ).textContent
-      vertexShader: verte.data,
-      fragmentShader: frage.data
+      vertexShader: document.getElementById( 'vertexShader' ).textContent,
+      fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+      //vertexShader: verte.data,
+     // fragmentShader: frage.data
 
   });
 
