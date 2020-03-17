@@ -26,13 +26,12 @@ function init() {
       u_resolution: { type: "v2", value: new THREE.Vector2() },
       u_mouse: { type: "v2", value: new THREE.Vector2() }
   };
-  console.log(verte.data);
   var material = new THREE.ShaderMaterial( {
       uniforms: uniforms,
       vertexShader: document.getElementById( 'vertexShader' ).textContent,
       fragmentShader: document.getElementById( 'fragmentShader' ).textContent
-      //vertexShader: verte.data,
-     // fragmentShader: frage.data
+    //  vertexShader: verte.data,
+    //  fragmentShader: frage.data
 
   });
 
